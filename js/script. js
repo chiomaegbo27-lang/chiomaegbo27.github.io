@@ -47,4 +47,3 @@ if (form) {
     // window.location.href = `mailto:chiomaegbo27@gmail.com?subject=Portfolio Enquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent(message + '\n\nReply to: ' + email)}`;
   });
 }
-
