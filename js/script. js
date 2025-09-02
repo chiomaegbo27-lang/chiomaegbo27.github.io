@@ -1,1 +1,50 @@
+// Mobile nav
+const toggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.site-nav');
+if (toggle) {
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+}
+
+// Year in footer
+const y = document.getElementById('year');
+if (y) y.textContent = new Date().getFullYear();
+
+// Reveal-on-scroll
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) e.target.classList.add('visible');
+  });
+}, { threshold: 0.15 });
+revealEls.forEach(el => io.observe(el));
+
+// Contact form validation (front-end only)
+const form = document.getElementById('contactForm');
+if (form) {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = form.elements['name'].value.trim();
+    const email = form.elements['email'].value.trim();
+    const message = form.elements['message'].value.trim();
+
+    if (!name || !email || !message) {
+      alert('Please fill out all fields.');
+      return;
+    }
+    const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (!emailOk) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    // Demo success
+    alert('Thanks, your message is ready to send!\n(Set up Formspree or use a mailto link to actually deliver.)');
+
+    // Example mailto fallback (optional):
+    // window.location.href = `mailto:chiomaegbo27@gmail.com?subject=Portfolio Enquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent(message + '\n\nReply to: ' + email)}`;
+  });
+}
 
