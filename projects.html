@@ -1,129 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chioma Egbo | Virtual Assistant & Tech Enthusiast</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #fdfdfd;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(120deg, #6a11cb, #2575fc);
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-    }
-    nav {
-      text-align: center;
-      background: #333;
-      padding: 0.8rem;
-    }
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
-    h2 {
-      color: #2575fc;
-      margin-bottom: 1rem;
-    }
-    .skills, .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-    }
-    .card {
-      background: #fff;
-      border-radius: 10px;
-      padding: 1rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: 0.3s;
-    }
-    .card:hover {
-      transform: scale(1.03);
-    }
-    footer {
-      text-align: center;
-      background: #333;
-      color: white;
-      padding: 1.5rem;
-      margin-top: 2rem;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Chioma Egbo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Chioma Egbo</h1>
-    <p>Virtual Assistant | Python & HTML Enthusiast | Tech-Savvy Support</p>
+  <header class="site-header">
+    <a class="brand" href="index.html">Chioma<span>Egbo</span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Chioma, a Virtual Assistant skilled in communication, scheduling, research, and tech tools. I also code in <b>Python</b> and <b>HTML</b>, combining VA expertise with technical skills to deliver smart and reliable support for clients.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="card">📧 Email & Calendar Management</div>
-      <div class="card">📊 Research & Data Entry</div>
-      <div class="card">💻 Python Scripting</div>
-      <div class="card">🌐 HTML Web Pages</div>
-      <div class="card">🗂️ Task & Project Management</div>
-      <div class="card">🤝 Customer Service</div>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Projects</h1>
+      <p class="lead">A mix of VA case studies and tech mini-projects.</p>
     </div>
   </section>
 
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="projects">
-      <div class="card">
+  <section class="projects-grid">
+    <div class="container grid-3">
+      <!-- CARD 1 -->
+      <article class="card project reveal">
+        <div class="thumb">
+          <img src="https://picsum.photos/600/400?random=1" alt="HTML Playground preview">
+        </div>
         <h3>HTML Coding Playground</h3>
-        <p>A custom coding environment I built and hosted for learning HTML.</p>
-        <a href="https://github.com/chiomaegbo27-lang/html-playground" target="_blank">View Project</a>
-      </div>
-      <div class="card">
-        <h3>Python Automation</h3>
-        <p>Scripts to automate repetitive VA tasks like data entry & scheduling.</p>
-      </div>
+        <p>Interactive repo for students to practice HTML. Includes starter templates & instructions.</p>
+        <div class="actions">
+          <a class="btn ghost" href="https://github.com/chiomaegbo27-lang/html-playground" target="_blank" rel="noopener">View Repo</a>
+        </div>
+      </article>
+
+      <!-- CARD 2 -->
+      <article class="card project reveal">
+        <div class="thumb">
+          <img src="https://picsum.photos/600/400?random=2" alt="Python automation preview">
+        </div>
+        <h3>Python: CSV Cleaner</h3>
+        <p>Small script to clean and combine CSV files—useful for research & data entry tasks.</p>
+        <div class="actions">
+          <a class="btn ghost" href="#" aria-disabled="true">Repo (coming soon)</a>
+        </div>
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="card project reveal">
+        <div class="thumb">
+          <img src="https://picsum.photos/600/400?random=3" alt="VA templates preview">
+        </div>
+        <h3>VA Templates Pack</h3>
+        <p>Research brief, content calendar, and calendar management SOP templates.</p>
+        <div class="actions">
+          <a class="btn ghost" href="#" aria-disabled="true">Repo (coming soon)</a>
+        </div>
+      </article>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>📧 chiomaegbo27@gmail.com</p>
-    <p>📱 +2348140933257</p>
-    <p><a href="https://github.com/chiomaegbo27" target="_blank">GitHub Profile</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Chioma Egbo | Built with ❤️ using GitHub Pages</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Chioma Egbo</p>
+      <div class="socials">
+        <a href="https://github.com/chiomaegbo27" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
-
