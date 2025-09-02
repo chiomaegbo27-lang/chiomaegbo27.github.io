@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Chioma Egbo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Chioma<span>Egbo</span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact</h1>
+      <p class="lead">Let’s work together. I’m available for part-time, full-time, or project-based roles.</p>
+    </div>
+  </section>
+
+  <section class="contact-wrap">
+    <div class="container two-col">
+      <form class="contact-form card reveal" id="contactForm" novalidate>
+        <label>Full Name
+          <input type="text" name="name" required placeholder="Your name">
+        </label>
+        <label>Email
+          <input type="email" name="email" required placeholder="your@email.com">
+        </label>
+        <label>Message
+          <textarea name="message" rows="6" required placeholder="How can I help?"></textarea>
+        </label>
+        <button class="btn primary" type="submit">Send Message</button>
+        <p class="form-note">This demo validates inputs in your browser. To actually send, use a mailto link or a service like Formspree later.</p>
+      </form>
+
+      <div class="contact-info reveal">
+        <h3>Reach Me</h3>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:chiomaegbo27@gmail.com">chiomaegbo27@gmail.com</a></li>
+          <li><strong>WhatsApp:</strong> +234 814 093 3257</li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/chiomaegbo27" target="_blank" rel="noopener">github.com/chiomaegbo27</a></li>
+          <!-- Add LinkedIn/YouTube when ready -->
+        </ul>
+        <a class="btn ghost" href="index.html">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Chioma Egbo</p>
+      <div class="socials">
+        <a href="https://github.com/chiomaegbo27" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
