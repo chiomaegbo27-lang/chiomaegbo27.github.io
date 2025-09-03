@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Chioma Egbo — Virtual Assistant</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
   <script defer src="js/script.js"></script>
 </head>
 <body>
@@ -14,51 +14,19 @@
     <a class="brand" href="index.html">Chioma<span>Egbo</span></a>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
     <nav class="site-nav">
-      <ul>
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="container reveal">
-      <p class="eyebrow">Virtual Assistant • Python • HTML</p>
-      <h1>Hello, I’m <span class="accent">Chioma Egbo</span></h1>
-      <p class="lead">Helping busy professionals stay organized & get more done.</p>
-      <p class="lead">I combine strong VA skills (calendar, inbox, research, customer care) with tech—Python automations & HTML formatting—to streamline your workflow.</p>
-      <div class="cta-row">
-        <a class="btn primary" href="projects.html">View Projects</a>
-        <a class="btn ghost" href="contact.html">Hire Me</a>
-      </div>
-      <ul class="badges">
-        <li>Email & Calendar</li>
-        <li>Research & Data Entry</li>
-        <li>Python Automation</li>
-        <li>HTML Editing</li>
-        <li>Trello • Notion • ClickUp</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- HIGHLIGHTS -->
-  <section class="highlights">
-    <div class="container grid-3">
-      <div class="card reveal">
-        <h3>Inbox & Calendar</h3>
-        <p>Zero-inbox systems, scheduling across time zones, and SOPs that keep your day smooth.</p>
-      </div>
-      <div class="card reveal">
-        <h3>Research & Docs</h3>
-        <p>Competitive research, data cleaning, spreadsheets, and polished client-ready documents.</p>
-      </div>
-      <div class="card reveal">
-        <h3>Tech Edge</h3>
-        <p>Python scripts for repetitive tasks and HTML for web formatting & content updates.</p>
-      </div>
+  <section id="home" class="hero reveal">
+    <div class="hero-content">
+      <h1>Hello, I’m <span>Chioma Egbo</span></h1>
+      <p>Virtual Assistant | Python Developer | HTML Enthusiast</p>
+      <a href="projects.html" class="btn">View My Work</a>
     </div>
   </section>
 
@@ -68,8 +36,6 @@
       <p>© <span id="year"></span> Chioma Egbo • Built on GitHub Pages</p>
       <div class="socials">
         <a href="https://github.com/chiomaegbo27-lang" target="_blank" rel="noopener">GitHub</a>
-
-        <!-- Add LinkedIn/YouTube later -->
       </div>
     </div>
   </footer>
